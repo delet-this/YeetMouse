@@ -14,5 +14,8 @@ endif
 
 #ccflags-y += -mhard-float
 
+# Silence warnings
+ccflags-y += -Wno-unused-function -Wno-missing-prototypes -Wno-bitwise-op-parentheses
+
 all:
 	cp -n config.sample.h config.h
